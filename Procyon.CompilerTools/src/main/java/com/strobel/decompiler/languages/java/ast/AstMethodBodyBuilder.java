@@ -123,8 +123,8 @@ public class AstMethodBodyBuilder {
         );
 
         block.addChild(new Comment(" ", CommentType.SingleLine), Roles.COMMENT);
-        block.addChild(new Comment(" The method \"" + method.getBriefDescription() + "\" could not be decompiled.",
-                                   CommentType.SingleLine), Roles.COMMENT);
+        block.addChild(new Comment(" The method \"" + method.getBriefDescription() + "\" could not be decompiled. " +
+                                    t.toString(), CommentType.SingleLine), Roles.COMMENT);
         block.addChild(new Comment(" ", CommentType.SingleLine), Roles.COMMENT);
 
         try {
